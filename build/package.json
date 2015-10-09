@@ -1,0 +1,31 @@
+{
+  "name": "algolia-react-input",
+  "version": "0.0.0",
+  "description": "react component",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": ".git"
+  },
+  "homepage": "",
+  "bugs": "/issues",
+  "directories": {
+    "example": "examples"
+  },
+  "authors": [
+    ""
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^0.13.3"
+  },
+  "tags": [
+    ""
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {
+    "react": "0.13.3"
+  }
+}
