@@ -1,6 +1,6 @@
 # algolia-react-input
 
-A simple react input component yo query your algolia index
+A simple react input component to query your algolia index
 
 ```js
 
