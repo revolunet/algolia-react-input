@@ -26,7 +26,7 @@ webpackJsonp([0,1],[
 	
 	var _libIndex2 = _interopRequireDefault(_libIndex);
 	
-	var algoliaClient = (0, _algoliasearch2['default'])('APPLICATION_ID', 'SEARCH_ONLY_API_KEY');
+	var algoliaClient = (0, _algoliasearch2['default'])('latency', '6be0576ff61c053d5f9a3225e2a90f76');
 	
 	var App = (function (_Component) {
 	  _inherits(App, _Component);
@@ -67,7 +67,7 @@ webpackJsonp([0,1],[
 	          null,
 	          'algolia-react-input'
 	        ),
-	        _react2['default'].createElement(_libIndex2['default'], { client: algoliaClient, index: 'test', onResults: this.onResults.bind(this), onError: this.onError.bind(this) }),
+	        _react2['default'].createElement(_libIndex2['default'], { client: algoliaClient, index: 'instant_search', onResults: this.onResults.bind(this), onError: this.onError.bind(this) }),
 	        _react2['default'].createElement('hr', null),
 	        this.state.hits.map(function (hit) {
 	          return _react2['default'].createElement(
