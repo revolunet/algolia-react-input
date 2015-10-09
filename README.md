@@ -11,17 +11,21 @@ A simple react input component to query your algolia index
 ```js
 
 const algoliaClient = algoliasearch('APPLICATION_ID', 'SEARCH_ONLY_API_KEY');
+const algoliaOptions = {
+  hitsPerPage: 200
+};
 
-<AlgoliaInput
+return <AlgoliaInput
   client={ algoliaClient }
   index='MyIndexName'
+  options= { algoliaOptions }
   onResults={ this.onResults }
   onError={ this.onError }
-/>
+/>;
 
 ```
 
-See complete example in [./examples/basic/apps.js](./examples/basic/apps.js)
+See complete example in [./examples/basic/app.js](./examples/basic/app.js)
 
 
 ## Scripts  
@@ -35,6 +39,7 @@ See complete example in [./examples/basic/apps.js](./examples/basic/apps.js)
 
 Package | Version | Dev
 --- |:---:|:---:
+[eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) | 3.5.1 | ✔
 [node-readme](https://www.npmjs.com/package/node-readme) | 0.1.9 | ✔
 [rackt-cli](https://www.npmjs.com/package/rackt-cli) | ^0.4.0 | ✔
 

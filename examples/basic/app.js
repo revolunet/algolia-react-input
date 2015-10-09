@@ -26,9 +26,9 @@ class App extends Component {
     return (
       <div className="example">
         <h1>algolia-react-input</h1>
-        <AlgoliaInput client={ algoliaClient } index='instant_search' onResults={ ::this.onResults } onError={ ::this.onError }/>
+        <AlgoliaInput client={ algoliaClient } options={ { hitsPerPage: 200 } } index='instant_search' onResults={ ::this.onResults } onError={ ::this.onError }/>
         <hr/>
-        { this.state.hits.map(hit => <li ref={ hit.objectID }>{ hit.name || hit.title }</li> ) }
+        { this.state.hits.map(hit => <li key={ hit.objectID }>{ hit.name || hit.title }</li> ) }
       </div>
     );
   }
