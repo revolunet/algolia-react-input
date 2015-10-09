@@ -27611,7 +27611,8 @@ webpackJsonp([0,1],[
 	      client: _react.PropTypes.object.isRequired,
 	      index: _react.PropTypes.string.isRequired,
 	      onResults: _react.PropTypes.func.isRequired,
-	      onError: _react.PropTypes.func.isRequired
+	      onError: _react.PropTypes.func,
+	      className: _react.PropTypes.string
 	    },
 	    enumerable: true
 	  }]);
@@ -27637,14 +27638,16 @@ webpackJsonp([0,1],[
 	    value: function onKeyUp(e) {
 	      var _this = this;
 	
-	      this.index.search(e.target.value, function (err, content) {
-	        if (err) {
-	          _this.props.onError(err);
-	        }
-	        if (content) {
-	          _this.props.onResults(content);
-	        }
-	      });
+	      if (e.target.value) {
+	        this.index.search(e.target.value, function (err, content) {
+	          if (err && _this.props.onError) {
+	            _this.props.onError(err);
+	          }
+	          if (content) {
+	            _this.props.onResults(content);
+	          }
+	        });
+	      }
 	    }
 	  }, {
 	    key: 'render',
