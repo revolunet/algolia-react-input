@@ -118,6 +118,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      options: _react.PropTypes.object,
 	      onResults: _react.PropTypes.func.isRequired,
 	      onError: _react.PropTypes.func,
+	      onEmptyField: _react.PropTypes.func, // when user empty the field
 	      className: _react.PropTypes.string
 	    },
 	    enumerable: true
@@ -159,6 +160,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	            _this.props.onResults(content);
 	          }
 	        });
+	      } else if (this.props.onEmptyField) {
+	        this.props.onEmptyField();
 	      }
 	    }
 	  }, {
