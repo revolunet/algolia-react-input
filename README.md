@@ -35,10 +35,8 @@ See complete example in [./examples/basic/apps.js](./examples/basic/apps.js)
 
 Package | Version | Dev
 --- |:---:|:---:
-[react](https://www.npmjs.com/package/react) | 0.13.3 | ✖
-[node-readme](https://www.npmjs.com/package/node-readme) | 0.1.8 | ✔
+[node-readme](https://www.npmjs.com/package/node-readme) | 0.1.9 | ✔
 [rackt-cli](https://www.npmjs.com/package/rackt-cli) | ^0.4.0 | ✔
-[react](https://www.npmjs.com/package/react) | ^0.13.3 | ✔
 
 
 ## Contributing
@@ -46,8 +44,7 @@ Package | Version | Dev
 Contributions welcome; Please submit all pull requests the against master branch. If your pull request contains JavaScript patches or features, you should include relevant unit tests. Please check the [Contributing Guidelines](contributng.md) for more details. Thanks!
 
 ## Author
-
-Julien Bouquillon <julien@bouquillon.com> http://github.com/revolunet
+ - Julien Bouquillon <julien@bouquillon.com> http://github.com/revolunet
 
 ## License
 

@@ -18,27 +18,27 @@
     "build": "rackt build",
     "readme": "./node_modules/.bin/node-readme"
   },
-  "author": {
-    "name": "Julien Bouquillon",
-    "email": "julien@bouquillon.com",
-    "url": "http://github.com/revolunet"
-  },
+  "authors": [
+    {
+      "name": "Julien Bouquillon",
+      "email": "julien@bouquillon.com",
+      "url": "http://github.com/revolunet"
+    }
+  ],
   "license": "MIT",
   "devDependencies": {
-    "node-readme": "0.1.8",
-    "rackt-cli": "^0.4.0",
-    "react": "^0.13.3"
+    "node-readme": "0.1.9",
+    "rackt-cli": "^0.4.0"
   },
   "peerDependencies": {
     "react": "^0.13.3"
   },
   "tags": [
-    ""
+    "algolia",
+    "react",
+    "search"
   ],
   "keywords": [
     ""
-  ],
-  "dependencies": {
-    "react": "0.13.3"
-  }
+  ]
 }
