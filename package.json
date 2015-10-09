@@ -1,0 +1,39 @@
+{
+  "name": "algolia-react-input",
+  "version": "0.0.0",
+  "description": "react component",
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": ".git"
+  },
+  "homepage": "",
+  "bugs": "/issues",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "rackt test --single-run --browsers Firefox",
+    "start": "rackt server"
+  },
+  "authors": [
+    ""
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "rackt-cli": "^0.4.0",
+    "react": "^0.13.3"
+  },
+  "peerDependencies": {
+    "react": "^0.13.3"
+  },
+  "tags": [
+    ""
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {
+    "react": "0.13.3"
+  }
+}

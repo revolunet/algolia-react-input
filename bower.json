@@ -1,0 +1,24 @@
+{
+  "name": "algolia-react-input",
+  "version": "0.0.0",
+  "homepage": "",
+  "authors": [
+    ""
+  ],
+  "description": "react component",
+  "main": "dist/algolia-react-input.js",
+  "keywords": [
+    ""
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "**/__tests__",
+    "build",
+    "examples",
+    "lib",
+    "node_modules",
+    "package.json",
+    "CONTRIBUTIN.md"
+  ]
+}
