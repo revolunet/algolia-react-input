@@ -5,9 +5,9 @@
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": ".git"
+    "url": "http://github.com/revolunet/algolia-react-input.git"
   },
-  "homepage": "",
+  "homepage": "http://github.com/revolunet/algolia-react-input",
   "bugs": "/issues",
   "directories": {
     "example": "examples"
