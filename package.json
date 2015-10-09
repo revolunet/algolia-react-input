@@ -1,6 +1,6 @@
 {
   "name": "algolia-react-input",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple react input component to query your algolia index",
   "main": "./lib/index.js",
   "repository": {
