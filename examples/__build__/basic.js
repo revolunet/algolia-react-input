@@ -67,12 +67,12 @@ webpackJsonp([0,1],[
 	          null,
 	          'algolia-react-input'
 	        ),
-	        _react2['default'].createElement(_libIndex2['default'], { client: algoliaClient, index: 'instant_search', onResults: this.onResults.bind(this), onError: this.onError.bind(this) }),
+	        _react2['default'].createElement(_libIndex2['default'], { client: algoliaClient, options: { hitsPerPage: 200 }, index: 'instant_search', onResults: this.onResults.bind(this), onError: this.onError.bind(this) }),
 	        _react2['default'].createElement('hr', null),
 	        this.state.hits.map(function (hit) {
 	          return _react2['default'].createElement(
 	            'li',
-	            { ref: hit.objectID },
+	            { key: hit.objectID },
 	            hit.name || hit.title
 	          );
 	        })
@@ -27610,9 +27610,16 @@ webpackJsonp([0,1],[
 	    value: {
 	      client: _react.PropTypes.object.isRequired,
 	      index: _react.PropTypes.string.isRequired,
+	      options: _react.PropTypes.object,
 	      onResults: _react.PropTypes.func.isRequired,
 	      onError: _react.PropTypes.func,
 	      className: _react.PropTypes.string
+	    },
+	    enumerable: true
+	  }, {
+	    key: 'defaultProps',
+	    value: {
+	      options: {}
 	    },
 	    enumerable: true
 	  }]);
@@ -27639,7 +27646,7 @@ webpackJsonp([0,1],[
 	      var _this = this;
 	
 	      if (e.target.value) {
-	        this.index.search(e.target.value, function (err, content) {
+	        this.index.search(e.target.value, this.props.options, function (err, content) {
 	          if (err && _this.props.onError) {
 	            _this.props.onError(err);
 	          }

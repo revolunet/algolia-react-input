@@ -1,6 +1,6 @@
 {
   "name": "algolia-react-input",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A simple react input component to query your algolia index",
   "main": "./lib/index.js",
   "repository": {
@@ -13,7 +13,7 @@
     "example": "examples"
   },
   "scripts": {
-    "test": "rackt test --single-run --browsers Firefox",
+    "test": "rackt test --single-run",
     "start": "rackt server",
     "build": "rackt build",
     "readme": "./node_modules/.bin/node-readme"
