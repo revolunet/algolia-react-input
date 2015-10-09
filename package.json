@@ -27,9 +27,11 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "eslint-plugin-react": "3.5.1",
-    "node-readme": "0.1.9",
-    "rackt-cli": "^0.4.0"
+    "babel-runtime": "^5.8.25",
+    "eslint-plugin-react": "^3.5.1",
+    "node-readme": "^0.1.9",
+    "rackt-cli": "^0.4.0",
+    "algoliasearch": "^3.8.1"
   },
   "peerDependencies": {
     "react": "^0.13.3"
@@ -41,5 +43,8 @@
   ],
   "keywords": [
     ""
-  ]
+  ],
+  "dependencies": {
+
+  }
 }
