@@ -1,13 +1,13 @@
 {
   "name": "algolia-react-input",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A simple react input component to query your algolia index",
   "main": "./index.js",
   "repository": {
     "type": "git",
-    "url": ".git"
+    "url": "http://github.com/revolunet/algolia-react-input.git"
   },
-  "homepage": "",
+  "homepage": "http://github.com/revolunet/algolia-react-input",
   "bugs": "/issues",
   "directories": {
     "example": "examples"
@@ -30,5 +30,6 @@
   ],
   "keywords": [
     ""
-  ]
+  ],
+  "dependencies": {}
 }

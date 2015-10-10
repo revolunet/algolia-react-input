@@ -119,13 +119,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	      onResults: _react.PropTypes.func.isRequired,
 	      onError: _react.PropTypes.func,
 	      onEmptyField: _react.PropTypes.func, // when user empty the field
-	      className: _react.PropTypes.string
+	      className: _react.PropTypes.string,
+	      placeholder: _react.PropTypes.string
 	    },
 	    enumerable: true
 	  }, {
 	    key: 'defaultProps',
 	    value: {
-	      options: {}
+	      options: {},
+	      placeholder: null
 	    },
 	    enumerable: true
 	  }]);
@@ -170,7 +172,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return _react2['default'].createElement(
 	        'div',
 	        null,
-	        _react2['default'].createElement('input', { onKeyUp: this.onKeyUp, type: 'text', className: this.props.className || 'algolia-react-input' })
+	        _react2['default'].createElement('input', { onKeyUp: this.onKeyUp, placeholder: this.props.placeholder, type: 'text', className: this.props.className || 'algolia-react-input' })
 	      );
 	    }
 	  }]);
