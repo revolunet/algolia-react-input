@@ -6,6 +6,8 @@
 
 A simple react input component to query your algolia index
 
+Demo : http://revolunet.github.io/algolia-react-input
+
 ## Usage
 
 ```js
