@@ -13,6 +13,9 @@ class App extends Component {
     this.state = {
       hits: []
     };
+    this.onResults = ::this.onResults;
+    this.onError = ::this.onError;
+    this.onEmptyField = ::this.onEmptyField;
   }
   onError() {
     console.log('onError', arguments);
@@ -22,13 +25,28 @@ class App extends Component {
       hits: content.hits
     });
   }
+  onEmptyField() {
+    this.setState({
+      hits: []
+    });
+  }
+  renderResult(hit) {
+    return (<li key={ hit.objectID }>
+              <img className="thumb" src={ hit.image } style={ {float: 'left' } }/>
+              <b>{ hit.name}</b>
+              <br/>
+              <p style={ {fontSize: 10 } }>{ hit.description }</p>
+           </li>);
+  }
   render() {
     return (
       <div className="example">
         <h1>algolia-react-input</h1>
-        <AlgoliaInput client={ algoliaClient } options={ { hitsPerPage: 200 } } index='instant_search' onResults={ ::this.onResults } onError={ ::this.onError }/>
+        <AlgoliaInput placeholder="Product search..." client={ algoliaClient } options={ { hitsPerPage: 50 } } index='instant_search' onResults={ this.onResults } onEmptyField={ this.onEmptyField } onError={ this.onError }/>
         <hr/>
-        { this.state.hits.map(hit => <li key={ hit.objectID }>{ hit.name || hit.title }</li> ) }
+        <div className="results">
+        { this.state.hits.map(this.renderResult) }
+        </div>
       </div>
     );
   }
