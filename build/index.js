@@ -172,7 +172,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return _react2['default'].createElement(
 	        'div',
 	        null,
-	        _react2['default'].createElement('input', { onKeyUp: this.onKeyUp, placeholder: this.props.placeholder, type: 'text', className: this.props.className || 'algolia-react-input' })
+	        _react2['default'].createElement('input', { style: { WebkitUserSelect: 'auto', userSelect: 'auto' }, onKeyUp: this.onKeyUp, placeholder: this.props.placeholder, type: 'text', className: this.props.className || 'algolia-react-input' })
 	      );
 	    }
 	  }]);
