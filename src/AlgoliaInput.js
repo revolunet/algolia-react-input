@@ -16,14 +16,10 @@ export default class AlgoliaInput extends Component {
     options: {},
     placeholder: null
   }
-  constructor(...args) {
-    super(...args);
-    this.onKeyUp = ::this.onKeyUp;
-  }
   componentDidMount() {
     this.index = this.props.client.initIndex(this.props.index);
   }
-  onKeyUp(e) {
+  onKeyUp = (e) => {
     if (e.target.value) {
       this.index.search(e.target.value, this.props.options, (err, content) => {
         if (err && this.props.onError) {
@@ -45,4 +41,4 @@ export default class AlgoliaInput extends Component {
     );
   }
 
-};
+}

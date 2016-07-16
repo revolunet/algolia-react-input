@@ -1,0 +1,31 @@
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.github-fork-ribbon {
+    position: fixed;
+
+    letter-spacing: 0.01em;
+}
+
+/* TODO: insert main styles of your demo here */
+
+.example {
+	margin:20px;
+}
+.example input {
+	font-size:25px;
+}
+.results li {
+	height:60px;
+	padding:10px;
+	list-style-type: none;
+}
+.thumb {
+  	height: 100%;
+  	margin-right: 10px;
+}
+

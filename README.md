@@ -6,7 +6,7 @@
 
 A simple react input component to query your algolia index
 
-Demo : http://revolunet.github.io/algolia-react-input
+Demo : http://revolunet.github.io/algolia-react-input/#/example1
 
 ## Usage
 
@@ -28,25 +28,7 @@ return <AlgoliaInput
 
 ```
 
-See complete example in [./examples/basic/app.js](./examples/basic/app.js)
-
-
-## Scripts  
-
- - **npm run test** : `rackt test --single-run`
- - **npm run start** : `rackt server`
- - **npm run build** : `rackt build`
- - **npm run readme** : `./node_modules/.bin/node-readme`
-
-## Dependencies
-
-Package | Version | Dev
---- |:---:|:---:
-[babel-runtime](https://www.npmjs.com/package/babel-runtime) | ^5.8.25 | ✔
-[eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) | ^3.5.1 | ✔
-[node-readme](https://www.npmjs.com/package/node-readme) | ^0.1.9 | ✔
-[rackt-cli](https://www.npmjs.com/package/rackt-cli) | ^0.4.0 | ✔
-[algoliasearch](https://www.npmjs.com/package/algoliasearch) | ^3.8.1 | ✔
+See complete example in [./docs/app.js](./docs/app.js)
 
 
 ## Contributing

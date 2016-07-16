@@ -1,31 +1,26 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 import algoliasearch from 'algoliasearch';
 
-import AlgoliaInput from '../../lib/index';
-
-
+import AlgoliaInput from '../src';
 
 const algoliaClient = algoliasearch('latency', '6be0576ff61c053d5f9a3225e2a90f76');
 
-class App extends Component {
+class AlgoliaExample extends Component {
   constructor(...args) {
     super(...args);
     this.state = {
       hits: []
     };
-    this.onResults = ::this.onResults;
-    this.onError = ::this.onError;
-    this.onEmptyField = ::this.onEmptyField;
   }
-  onError() {
-    console.log('onError', arguments);
+  onError = () => {
+    console.log('onError', arguments);  // eslint-disable-line
   }
-  onResults(content) {
+  onResults = (content) => {
     this.setState({
       hits: content.hits
     });
   }
-  onEmptyField() {
+  onEmptyField = () => {
     this.setState({
       hits: []
     });
@@ -50,6 +45,6 @@ class App extends Component {
       </div>
     );
   }
-};
+}
 
-React.render(<App/>, document.getElementById('container'));
+export default AlgoliaExample;
