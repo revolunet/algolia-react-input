@@ -5,7 +5,7 @@ export default class AlgoliaInput extends Component {
     client: PropTypes.object.isRequired,
     index: PropTypes.string.isRequired,
     options: PropTypes.object,
-    onResults: PropTypes.func.isRequired,
+    onResults: PropTypes.func,
     onError: PropTypes.func,
     onEmptyField: PropTypes.func, // when user empty the field
     className: PropTypes.string,
@@ -25,7 +25,7 @@ export default class AlgoliaInput extends Component {
         if (err && this.props.onError) {
           this.props.onError(err);
         }
-        if (content) {
+        if (content && this.props.onResults) {
           this.props.onResults(content);
         }
       });
