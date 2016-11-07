@@ -28,7 +28,7 @@ return <AlgoliaInput
 
 ```
 
-See complete example in [./docs/app.js](./docs/app.js)
+See complete example in [./docs/AlgoliaExample.js](./docs/AlgoliaExample.js)
 
 
 ## Contributing
