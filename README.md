@@ -11,7 +11,7 @@ Demo : http://revolunet.github.io/algolia-react-input/#/example1
 ## Usage
 
 ```js
-
+const algoliasearch = require('algoliasearch');
 const algoliaClient = algoliasearch('APPLICATION_ID', 'SEARCH_ONLY_API_KEY');
 const algoliaOptions = {
   hitsPerPage: 200
@@ -33,7 +33,7 @@ See complete example in [./docs/AlgoliaExample.js](./docs/AlgoliaExample.js)
 
 ## Contributing
 
-Contributions welcome; Please submit all pull requests the against master branch. If your pull request contains JavaScript patches or features, you should include relevant unit tests. Please check the [Contributing Guidelines](contributng.md) for more details. Thanks!
+Contributions welcome; Please submit all pull requests the against master branch. If your pull request contains JavaScript patches or features, you should include relevant unit tests. Thanks!
 
 ## Author
  - Julien Bouquillon <julien@bouquillon.com> http://github.com/revolunet
